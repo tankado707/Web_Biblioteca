@@ -1,0 +1,21 @@
+<h4>Lista Funcionario</h4>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Apelido</th>
+            <th>Email</th>
+            <th>Área</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let funcionario de funcionarios">
+            <td>{{funcionario.Nome}}</td>
+            <td>{{funcionario.Apelido}}</td>
+            <td>{{funcionario.Email}}</td>
+            <td>{{funcionario.area}}</td>
+
+        </tr>
+    </tbody>
+
+</table>
